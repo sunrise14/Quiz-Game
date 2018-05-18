@@ -1,0 +1,145 @@
+html{
+	background:radial-gradient(circle, #fff, #ccc); /*radial means it appears as a circle with white in middle and grey to corners..*/
+	height:100%;
+}
+#container{
+	height:500px;
+	position: relative;
+	width:550px;
+	background-color: #9DD2EA;
+	margin:100px auto;
+	padding:20px;
+	border-radius: 10px;
+	box-shadow:3px 4px 10px 0px #009de4 /* box-shadow:[horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+	
+}
+#score{
+	background-color:#F1FF92;
+	color:#888E5F;
+	padding:11px;
+	box-shadow:0px 4px 0px #9da853;
+		left:500px;
+	position:absolute;
+}
+#correct{
+	position:absolute;
+	left:260px;
+	background-color: #42e252;
+	color:white;
+	padding:11px;
+	display:none;
+}
+#wrong{
+	position:absolute;
+	left:100px;
+	background-color: #de401a;
+	color:white;
+	padding:11px;
+	display:none;
+}
+#question{
+	width:450px;
+	height:250px;
+	margin:50px auto 10px auto;
+	background-color: #9DA0EA;
+	box-shadow: 0px 4px #535aa8;
+	font-size: 100px;
+	text-align: center;
+	font-family: cursive,sans-serif;
+}
+#instruction{
+	width:450px;
+	height:50px;
+	background-color: #B481D9;
+	margin:10px auto;
+	line-height: 45px;
+	text-align: center;
+	box-shadow:0px 4px #8153a8;
+}
+#choices{
+	width:450px;
+	height:100px;
+	margin:5px auto;
+}
+.box{
+	width:85px;
+	height: 85px;
+	background-color: white;
+	float:left;
+	margin-right: 36px;
+	cursor: pointer;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0,0,0,0.2);
+	text-align: center;
+	line-height: 80px;
+	position: relative;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+
+
+}
+.box:hover{
+	background-color: #9C89F6;
+	color:white;
+	box-shadow: 0px 4px #6b54d3;
+}
+.box:active, #startreset:active{
+	top:4px;
+	box-shadow: 0px 0px #6b54d3;
+	top:4px;
+}
+#box1{
+
+}
+#box2{
+
+}
+#box3{
+
+}
+#box4{
+margin-right: 0px;
+}
+#startreset{
+	width:85px;
+	padding:10px;
+	margin:0 auto;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0,0,0,0.2);
+	text-align: center;
+	position: relative;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+
+	background-color: rgba(255,255,255,0.5);
+	cursor:pointer;
+}
+#timeremaining{
+	width:150px;
+	padding:10px;
+	position: absolute;
+	top:495px;
+	left:400px;
+	background-color: rgba(181,235,36,0.8);
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0,0,0,0.2);
+	display: none;
+}
+#gameOver{
+	width:500px;
+	height:200px;
+	background:linear-gradient(#F3CA6B,#F3706C);
+	color: white;
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	top:100px;
+	left:45px;
+	z-index: 2;
+	display: none;
+}
